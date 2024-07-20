@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Guia Telefónica - Buscar</title>
+</head>
+<body>
+    <header class="cabecera-fija">
+        <div class="container-header">
+            <div><a href="./index.html"><img src="./src/HOME.jpg" alt=""></a></div>
+            <div><a href="./buscar.html"><img src="./src/BUSCAR.jpg" alt=""></a></div>
+            <div><a href="./contacto.html"><img src="./src/CONTACTO.jpg" alt=""></a></div>
+            <div><p style="color:rgb(245, 220, 1)">GUIA TELEFONICA DE PELUCHINLANDIA</p></div>
+            <div class="container-header-login">
+                <ul><input type="checkbox" name="menul" id="menul"><img src="./src/admin.jpg" alt="">
+                <li class="login">
+                        <form name="login">
+                        <legend>Logea o registrate</legend>
+                           <label for="user" style="font-weight: bold; font-size:x-large;">User:</label><br>
+                           <input type=text name="user" id="user" placeholder="Usuario" required><br>
+                           <label for="pass" style="font-weight: bold; font-size:x-large;">Pass:</label><br>
+                           <input type=text name="pass" id="pass" placeholder="Contraseña" required><br>
+                           <input onclick=go() type=button value="Login"><input type=button value="register">
+                        </form>
+                </li>  
+                </ul>
+            </div>
+        </div> 
+    </header>
+    <section>
+    <div class="box">
+    <h2>Puede realizar sus búsquedas ingresando el apellido</h>
+    <h3>
+    <div class="form" >
+     <form action="#" method="post">
+        <br>
+        <label for="apellido">APELLIDO:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="ej: Richard" required> <br> <br>
+        <fieldset>
+        <legend>Ordenar resultados por:</legend>
+        <input type="radio" name="ord" id="nom" checked><label for="nom">Nombre</label><br>
+        <input type="radio" name="ord" id="num"><label for="num">Número</label><br>
+        <input type="radio" name="ord" id="dir"><label for="dir">Dirección</label>
+        </fieldset><br>
+        <input type="checkbox" name="terminos" id="terminos" required>
+        <label for="terminos">Acepto los <a href="./terminos_y_condiciones.txt" target="_blank">términos y condiciones</a>.</label> <br> <br>
+        <input type="image" alt="buscar" src="src/buscar.png" width="150" height="50">
+    </h6>
+     </form>
+   </div>
+   </div>
+    </section>
+</body>
+</html>

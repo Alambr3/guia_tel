@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Guía Telefónica - Home</title>
+</head>
+<body>
+    <header class="cabecera-fija">
+        <div class="container-header">
+            <div><a href="./index.html"><img src="./src/HOME.jpg" alt="Home"></a></div>
+            <div><a href="./buscar.html"><img src="./src/BUSCAR.jpg" alt="Buscar"></a></div>
+            <div><a href="./contacto.html"><img src="./src/CONTACTO.jpg" alt="Contacto"></a></div>
+            <div><p>GUIA TELEFONICA DE PELUCHINLANDIA</p></div>
+            <div class="container-header-login">
+                <ul>
+                    <input id="menu1" type="checkbox" name="menul" id="menul">
+                    <img src="./src/admin.jpg" alt="Admin">
+                    <li class="login">
+                        <form name="login">
+                            <legend>Logea o registrate</legend>
+                            <label for="user" style="font-weight: bold; font-size:x-large;">User:</label><br>
+                            <input type="text" name="user" id="user" placeholder="Usuario" required><br>
+                            <label for="pass" style="font-weight: bold; font-size:x-large;">Pass:</label><br>
+                            <input type="text" name="pass" id="pass" placeholder="Contraseña" required><br>
+                            <input onclick="go()" type="button" value="Login"><label for="">|</label><input type="button" value="Register">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <section>
+            <div class="titulo">
+                <h1>GUIA TELEFONICA DE PELUCHINLANDIA</h1>
+                <h3>Toda la informacion de la comunidad en una simple busqueda</h3>
+                <img src="./src/guia.jpg" alt="Guía Telefónica">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

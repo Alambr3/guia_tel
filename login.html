@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <header class="cabecera-fija">
+        <div class="container-header">
+            <div><a href="./index.html"><img src="./src/HOME.jpg" alt=""></a></div>
+            <div><a href="./buscar.html"><img src="./src/BUSCAR.jpg" alt=""></a></div>
+            <div><a href="./contacto.html"><img src="./src/CONTACTO.jpg" alt=""></a></div>
+            <div class="container-header-login"><a href="./login.html"><img src="./src/admin.jpg" alt=""></a></div>
+        </div> 
+    </header>
+    <section>
+    <h2>Por favor inicie sesión para continuar</h2><br>
+
+        <form name="login" action="./admin.html">
+           <label for="user" style="font-weight: bold; font-size:x-large;">User:</label>
+           <input type="user" name="user" id="user" placeholder="Usuario" required>
+           <label for="pass" style="font-weight: bold; font-size:x-large;">Pass:</label>
+           <input type="pass" name="pass" id="pass" placeholder="Contraseña" required>
+           <input onclick=go() type=button value="Login">
+        </form>
+      </div>
+    </section>
+</body>
+</html>
